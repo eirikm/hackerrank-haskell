@@ -20,6 +20,7 @@ cabal.sandbox.config
 cabal.config
 cabal.project.local
 .ghc.environment.*
+*.cabal
 .HTF/
 # Stack
 .stack-work/
@@ -52,4 +53,3 @@ TAGS
 
 # other
 .DS_Store
-.cabal
