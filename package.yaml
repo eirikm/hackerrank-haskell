@@ -1,0 +1,35 @@
+name:                hackerrank-haskell
+version:             0.1.0.0
+github:              "github.com/eirikm/hackerrank-haskell"
+license:             AllRightsReserved
+author:              "Eirik Meland"
+maintainer:          "eirik.meland@gmail.com"
+
+default-extensions:
+- BlockArguments
+- TypeApplications
+
+dependencies:
+- base >= 4.7 && < 5
+- hspec
+
+executables:
+  company-profile-api:
+    main:                Main.hs
+    source-dirs:         app
+    dependencies:
+    - hackerrank-haskell
+    - text
+
+library:
+  source-dirs: src
+  dependencies:
+    - text
+
+tests:
+  company-profile-api-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - hackerrank-haskell
+    - hspec
