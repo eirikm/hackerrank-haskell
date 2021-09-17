@@ -1,11 +1,12 @@
+{-# LANGUAGE BlockArguments #-}
+
 module SolveMeFirstSpec (spec) where
 
 import Test.Hspec
-import SolveMeFirst (solveMeFirst')
+import SolveMeFirst (solveMeFirst)
 
 spec :: Spec
 spec =
-  describe "SolveMeFirst" do
-    it "should work" do
-      solveMeFirst' "1 2" `shouldBe` 3
-
+  describe "SolveMeFirst" do 
+    it "test set" do 
+        solveMeFirst "2 3" `shouldBe` 5

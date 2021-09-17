@@ -1,10 +1,13 @@
+{-# LANGUAGE ScopedTypeVariables #-}
+
+-- https://www.hackerrank.com/challenges/fp-solve-me-first/problem
+
 module SolveMeFirst where
 
-solveMeFirst :: IO () 
-solveMeFirst = interact (show . solveMeFirst')
+main :: IO () 
+main = interact (show . solveMeFirst)
 
-
-solveMeFirst' :: String -> Int
-solveMeFirst' input = do
-    let parsedInts = fmap (read @Int) (words input)
-    sum parsedInts
+solveMeFirst :: String -> Int
+solveMeFirst input = do
+        let parsedInts :: [Int] = read <$> (words input)
+        sum parsedInts
