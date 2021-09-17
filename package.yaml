@@ -7,7 +7,6 @@ maintainer:          "eirik.meland@gmail.com"
 
 dependencies:
 - base >= 4.7 && < 5
-- hspec
 
 library:
   source-dirs: src
@@ -15,7 +14,7 @@ library:
     - text
 
 tests:
-  company-profile-api-test:
+  hackerrank-haskell-test:
     main:                Spec.hs
     source-dirs:         test
     dependencies:
