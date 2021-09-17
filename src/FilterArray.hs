@@ -1,5 +1,7 @@
 module FilterArray where
 
+-- https://www.hackerrank.com/challenges/fp-filter-array/problem
+
 main :: IO ()
 main = interact (format . filterArray . parse)
     where
